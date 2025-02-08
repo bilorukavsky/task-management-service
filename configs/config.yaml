@@ -1,0 +1,28 @@
+auth_jwt:
+  private_key_path: ""
+  public_key_path: ""
+  algorithm: "RS256"
+  access_token_expire_minutes: 15
+  refresh_token_expire_minutes: 43200
+
+database:
+  host: "db_task_managment"
+  port: 5432
+  name: task_management
+  user: ""
+  password: ""
+  sslmode: "disable"
+
+http:
+  host: "localhost"
+  port: 8000
+
+redis:
+  addr: "redis:6379"
+  password: "" 
+  db: 0
+  timeout: 5    # Тайм-аут подключения в секундах
+
+logger:
+  level: "debug"
+  format: "text"
